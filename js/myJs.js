@@ -359,7 +359,7 @@ $(document).ready(function() {
     }
 });
 // 以下偵測左右按鈕
-$(window).on("load", function() {
+(function($) {
     const $bannerContainer = $('.banner_img_btn');
     const $bannerContent = $('.banner_img_btn'); // 假設內容使用不同的 class
     const $leftArrow = $('#left-arrow');
