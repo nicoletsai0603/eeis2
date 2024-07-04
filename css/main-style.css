@@ -4373,3 +4373,8 @@
         z-index: 8;
         mix-blend-mode: multiply;
     }
+    
+    #left-arrow,
+    #right-arrow {
+        display: none;
+    }
