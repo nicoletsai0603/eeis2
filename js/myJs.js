@@ -359,9 +359,9 @@ $(document).ready(function() {
     }
 });
 // 以下偵測左右按鈕
-$(document).ready(function() {
+$(window).on("load", function() {
     const $bannerContainer = $('.banner_img_btn');
-    const $bannerContent = $('.banner_img_btn');
+    const $bannerContent = $('.banner_img_btn'); // 假設內容使用不同的 class
     const $leftArrow = $('#left-arrow');
     const $rightArrow = $('#right-arrow');
     const $bannerImgBtn = $('#banner_img_btn');
@@ -379,20 +379,19 @@ $(document).ready(function() {
             $bannerContent.css('transform', 'translateX(0)');
             $bannerImgBtn.css('transform', 'translateX(0)');
         } else {
-            if (scrollPosition <= 0) {
-                $leftArrow.hide();
-            } else {
-                $leftArrow.show();
-            }
-            if (scrollPosition >= maxScroll) {
-                $rightArrow.hide();
-            } else {
-                $rightArrow.show();
-            }
+            $leftArrow.toggle(scrollPosition > 0);
+            $rightArrow.toggle(scrollPosition < maxScroll);
         }
     }
 
-    updateArrowsVisibility();
+    // 初始檢查 maxScroll，如果大於 1500 隱藏箭頭
+    const initialMaxScroll = $bannerContent[0].scrollWidth - $bannerContainer.width();
+    if (initialMaxScroll > 1500) {
+        $leftArrow.hide();
+        $rightArrow.hide();
+    } else {
+        updateArrowsVisibility();
+    }
 
     $leftArrow.on('click', function() {
         scrollPosition -= scrollStep;
@@ -413,6 +412,7 @@ $(document).ready(function() {
         updateArrowsVisibility();
     });
 });
+
 
 
 //   快捷鍵
