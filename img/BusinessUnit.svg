@@ -28,7 +28,7 @@
   <g style="isolation: isolate;">
     <g id="_圖層_2" data-name="圖層 2">
       <g id="Leadpage-100">
-        <g id="_業務單位" data-name="業務單位" style="filter: url(#drop-shadow-1);">
+        <g id="BusinessUnit" style="filter: url(#drop-shadow-1);">
           <g>
             <polygon points="307.64 348.54 0 310.86 39.9 0 348.57 41.32 307.64 348.54" style="fill: #f4e1d2; stroke-width: 0px;"/>
             <g style="clip-path: url(#clippath);">
@@ -276,7 +276,7 @@
                       <path d="M95.53,242.93c-23.89,17.39-17.51,52.17-12.12,60.9,1.87,3.02,5.84,4.91,9.24,5.95,25.23,7.68,36.34,6.5,53.5,4.89.64-.06,1.31.01,1.9-.25,2.11-.91,1.73-3.93,1.46-6.21-.46-3.89.53-7.93,2.72-11.17-12.02-4.58-25.51-4.29-37.42-9.16-.68-.28-1.38-.59-1.9-1.11-1.36-1.37-1.08-3.62-.72-5.52,1.45-7.63,2.53-15.49,1.15-23.14-1.38-7.64-1.45-16.24-8.33-19.85,0,0-6.18,2.26-9.49,4.67" style="fill: #fff; stroke-width: 0px;"/>
                       <path d="M141.04,294.96c-2.7,3.08-4.79,6.69-6.1,10.57-.17.49,4.23,2.6,7.1,2.83,2.04.17,4.27-.47,5.49-2.12" style="fill: none; stroke: #2e4369; stroke-miterlimit: 10; stroke-width: .63px;"/>
                       <path d="M135.44,308.56c-.74,1.78-.86,3.81-.34,5.67" style="fill: none; stroke: #2e4369; stroke-miterlimit: 10; stroke-width: .63px;"/>
-                      <path d="M141.7,302.92c.07-.63.63-1.09,1.27-1.03s1.09.63,1.03,1.27-.63,1.09-1.27,1.03-1.09-.63-1.03-1.27" style="fill: #32436b; stroke-width: 0px;"/>
+                      <path d="M141.7,302.92c.07-.63.63-1.09,1.27-1.03s1.09.63,1.03,1.27c-.07.63-.63,1.09-1.27,1.03s-1.09-.63-1.03-1.27" style="fill: #32436b; stroke-width: 0px;"/>
                       <path d="M110.02,286.46c-3.76-.23-7.57.64-10.7,2.47" style="fill: none; stroke: #2e4369; stroke-miterlimit: 10; stroke-width: .44px;"/>
                       <path d="M111.91,287.89c-3.2.95-6.05,2.78-8.08,5.18" style="fill: none; stroke: #2e4369; stroke-miterlimit: 10; stroke-width: .44px;"/>
                       <path d="M113,289.22c-1.75.89-3.26,2.15-4.39,3.64" style="fill: none; stroke: #2e4369; stroke-miterlimit: 10; stroke-width: .44px;"/>
