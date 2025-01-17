@@ -1,765 +1,835 @@
-@media screen and (max-width: 1840px) {
-    .foodWise2 {
-        margin-top: 0px;
-        position: relative;
-        top: 0px;
-        left: -80px;
-        height: fit-content;
-        width: 100%;
-        display: grid;
-        justify-content: center;
-        place-items: center;
+    @media screen and (max-width: 1840px) {
+        .foodWise2 {
+            margin-top: 0px;
+            position: relative;
+            top: 0px;
+            left: -80px;
+            height: fit-content;
+            width: 100%;
+            display: grid;
+            justify-content: center;
+            place-items: center;
+        }
+        .foodWise2 ul {
+            background-color: #a5eed5;
+            padding: 100px 10px 50px 10px;
+            border-radius: 2em 2em 2em 2em;
+            margin-top: -100px;
+            width: 100%;
+        }
+        .foodWise2 ul li {
+            border-bottom: #fff 0px solid;
+            list-style: none;
+            text-align: center;
+            display: inline-block;
+        }
+        .foodWise2 ul li:after {
+            content: "";
+            border-bottom: #076b54 0px solid;
+            display: block;
+            margin-top: 1px;
+            width: 100%;
+            height: 1px;
+        }
+        .foodWise2 ul li a {
+            display: block;
+            color: #225e92;
+            font-size: 18rem;
+            padding: 5px 8rem;
+        }
+        .foodWise2 ul li a:hover,
+        .foodWise2 ul li a:focus,
+        .foodWise2 ul li a.active {
+            color: #6d5a1b;
+        }
+    }
+    
+    @media screen and (max-width: 1500px) {
+        .foodWise {
+            margin-left: 0;
+        }
+        .contain1000 {
+            max-width: 1300px;
+            width: calc(100% - 200px);
+        }
+        .container,
+        .width1500,
+        .scool_b {
+            width: 95% !important;
+        }
+        .globe {
+            z-index: unset;
+        }
+        .foodWise {
+            margin-top: -120px;
+        }
+        .foodWise2 {
+            margin-top: 0px;
+            position: relative;
+            top: 0px;
+            left: 290px;
+            height: fit-content;
+            width: 100%;
+            display: grid;
+            justify-content: space-between;
+            place-items: center;
+        }
+        .foodWise2 ul {
+            background-color: #a5eed5;
+            padding: 100px 10px 50px 10px;
+            border-radius: 2em 2em 2em 2em;
+            margin-top: -100px;
+            width: 100%;
+        }
+        .foodWise2 ul li {
+            border-bottom: #fff 0px solid;
+            list-style: none;
+            text-align: center;
+            display: inline-block;
+        }
+        .foodWise2 ul li:after {
+            content: "";
+            border-bottom: #076b54 0px solid;
+            display: block;
+            margin-top: 1px;
+            width: 100%;
+            height: 1px;
+        }
+        .foodWise2 ul li a {
+            display: block;
+            color: #225e92;
+            font-size: 18rem;
+            padding: 5px 2rem;
+        }
+        .foodWise2 ul li a:hover,
+        .foodWise2 ul li a:focus,
+        .foodWise2 ul li a.active {
+            color: #6d5a1b;
+        }
+        .nav_menu>li.search>.hasChild {
+            display: grid !important;
+            justify-content: center;
+        }
+        .hot_word {
+            width: 100%;
+        }
+        .contain1000 {
+            max-width: calc(1500px - 400px);
+            width: calc(100% - 400px);
+        }
+        .focuswrapper {
+            width: 95%;
+        }
+        #mySwiper2 .swiper-button-next,
+        #mySwiper2 .swiper-button-prev {
+            transform: scale(0.7);
+            width: 100px;
+            height: 100px;
+            background-size: contain;
+        }
+        #mySwiper2 .swiper-button-next {
+            right: -20px
+        }
+        .Situational_exploration_right_btn {
+            right: 0 !important
+        }
+        .game_btn {
+            RIGHT: 100px;
+            top: 100px
+        }
+    }
+    
+    @media screen and (max-width: 1453px) {
+        .left_animate {
+            width: 45%;
+        }
+        .bubble1,
+        .bubble_btn {
+            width: 100%;
+        }
+        main .width1500.innerpage {
+            grid-template-columns: unset
+        }
+        .foodWise h2 {
+            margin: auto;
+        }
+        .foodWise ul {
+            margin: auto;
+            margin-top: -100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .foodWise {
+            margin-top: -25px;
+        }
+        .foodWise ul li {
+            width: 90%;
+            margin: auto;
+        }
+        main .width1500 {
+            gap: 20px;
+        }
+        .width1292 {
+            padding: 20px;
+        }
+        .foodWise {
+            position: unset;
+        }
+        .discover {
+            position: fixed;
+            bottom: 10px;
+            right: 15px;
+            width: 115px;
+            height: 100px;
+            top: unset;
+        }
+    }
+    
+    @media screen and (max-width:1183px) {
+        .inside_banner {
+            flex-direction: column-reverse;
+        }
+        h2.inside {
+            width: 100%;
+            margin-left: unset;
+            margin-bottom: -20px;
+        }
+        main .width1500.Map_explore_page {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
+    @media screen and (max-width:1500px) {
+        main .width1500.Topic_list {
+            grid-template-columns: 1fr;
+            padding-top: 10px;
+        }
+        .school_inside2 {
+            grid-template-columns: 1fr;
+            margin: 0;
+            padding: 30px 0;
+            border-bottom: #a77127 1px solid;
+        }
+        .school_inside_img {
+            grid-row: 1;
+            margin-top: 50px;
+        }
+        .school_inside2 a {
+            grid-template-columns: unset !important;
+        }
+        .school_inside2.b2,
+        .school_inside2.b3 {
+            grid-template-columns: 1fr !important;
+            margin-left: unset;
+            margin-top: unset;
+        }
+        #greybg.on {
+            display: block;
+        }
+        .environmental_book_img {
+            grid-row: 1;
+        }
+        header.eems {
+            width: 100%;
+            height: 63px;
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            background-color: #009b9b;
+        }
+        .eems_color {
+            display: none;
+        }
+        .ac_breadcrumb {
+            padding-top: 60px;
+        }
+        .portfolio-filter {
+            display: flex;
+            flex-direction: column;
+            width: calc(100% - 80px);
+            height: 100%;
+            position: fixed;
+            left: calc(-100% + 80px);
+            top: 0;
+            z-index: 9999;
+            background: #2cbaba;
+            margin-bottom: 0;
+            margin-top: 0;
+            transition: 0.3s;
+        }
+        .portfolio-filter.on {
+            left: 0;
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        /*mobile選單*/
+        #mobile_menu_labIcon {
+            display: block;
+            right: 2.5%;
+            top: 23px;
+            z-index: 1000;
+            position: absolute;
+        }
+        #menu_mobile {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            font-size: 1em;
+            position: relative;
+            display: block;
+        }
+        .search_border {
+            position: relative;
+            top: unset;
+            left: unset;
+            flex-wrap: wrap;
+        }
+        .hamburger {
+            cursor: pointer;
+            display: inline-block;
+        }
+        .hamburger2 {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            display: block;
+        }
+        .hamburger2 .line {
+            width: 30px;
+            height: 2px;
+            background-color: #d09623;
+            display: block;
+            margin: 4px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            border-radius: 50px;
+        }
+        .hamburger2:hover {
+            cursor: pointer;
+        }
+        .hamburger .line {
+            width: 30px;
+            height: 2px;
+            background-color: #fff;
+            display: block;
+            margin: 4px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            border-radius: 50px;
+        }
+        .hamburger:hover {
+            cursor: pointer;
+        }
+        #hamburger-1.is-active .line:nth-child(2) {
+            opacity: 0;
+        }
+        #hamburger-1.is-active .line:nth-child(1) {
+            transform: translateY(3px) rotate(45deg);
+        }
+        #hamburger-1.is-active .line:nth-child(3) {
+            transform: translateY(-10px) rotate(-45deg);
+        }
+        .portfolio-filter.isotope-filter.pull-center {
+            width: calc(100% - 80px);
+            height: 100%;
+            position: fixed;
+            left: calc(-100% + 80px);
+            top: 0;
+            z-index: 9999;
+            background: #fff;
+            margin-bottom: 0;
+            margin-top: 0;
+            transition: 0.3s;
+        }
+        header.eems .sitemap {
+            background-color: rgba(0, 0, 0, 0.3);
+            justify-content: center;
+            padding: 20px 0;
+        }
+        .nav_menu {
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+        }
+        .nav_menu li {
+            border-bottom: #fff 1px solid;
+            width: 100%;
+        }
+        .nav_menu li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            padding: 15px 0;
+        }
+        .nav_menu>li.nsdnmenu .hasChild li a {
+            width: 100%;
+            padding: 15px;
+            margin: 0;
+        }
+        header.eems h1 {
+            bottom: unset;
+            top: -20px;
+        }
+        header.eems h1 a {
+            height: 40px;
+        }
+        header.eems .sitemap ul {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+            padding-left: 0;
+        }
+        .Topic_list_menu {
+            top: 70px;
+        }
+        .Topic_list_menu ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 15px;
+            width: 100%;
+        }
+        .school_inside2.b1 {
+            margin-top: 0;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .socialAnchor1 {
+            margin-top: 0
+        }
+        .map_bg {
+            display: none;
+        }
+        .list_menu {
+            background: url(../img/list_menu.svg) 0 0/contain no-repeat;
+            width: 44px;
+            height: 22px;
+            display: inline-block;
+        }
+        .Topic_list_menu h2 {
+            display: flex;
+            justify-content: space-between;
+            font-size: 24rem;
+            margin: 5px;
+            align-items: center
+        }
+        .Topic_list_menu div {
+            display: none;
+        }
+        .nav_menu>li>.hasChild {
+            position: relative;
+            left: unset;
+            top: unset;
+            width: 100%;
+            opacity: 1;
+            display: none;
+            background-color: #009b9b;
+            margin: 0;
+            padding: 0;
+        }
+        .nav_menu>li.nsdnmenu:hover>.hasChild {
+            padding: 0;
+        }
+        .hasChild ul {
+            max-width: 100%;
+        }
+        .nav_menu>li.nsdnmenu>.hasChild ul li {
+            flex-direction: column;
+        }
+        .nav_menu>li.nsdnmenu .hasChild2 {
+            position: relative;
+            left: unset;
+            top: unset;
+            width: 100%;
+            opacity: 1;
+            display: none;
+            background-color: #007a7a;
+            margin: 0;
+            padding: 0;
+        }
+        .nav_menu>li.nsdnmenu:hover li:checked>.hasChild2,
+        .nav_menu>li.nsdnmenu:focus-within li:focus-within>.hasChild2 {
+            width: 100%;
+            position: relative;
+            left: unset;
+            top: unset;
+            display: block;
+            background-color: #008383;
+        }
+        .nav_menu li.search a span {
+            display: none;
+        }
+        .note_description {
+            font-size: 20rem;
+            line-height: 30px;
+            padding-left: 39px;
+            text-align: justify;
+            margin-bottom: 8px;
+            width: 95%;
+        }
+    }
+    
+    @media screen and (max-width: 1140px) {
+        .bubble {
+            display: flex;
+            flex-wrap: wrap;
+            height: auto;
+            justify-content: center;
+        }
+        .global_action {
+            margin-top: unset;
+        }
+    }
+    
+    @media screen and (max-width:1137px) {
+        .NEWS li {
+            display: grid;
+        }
+        .NEWS li a:nth-child(1) {
+            width: 100%;
+        }
+        footer .width1500 {
+            padding-top: 80px;
+        }
+        main .width1500.search_criteria {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .search_list::after {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width:992px) {
+        .search_box div {
+            text-align: left !important;
+        }
+        .search_box #range,
+        .search_box #one_date,
+        .search_box #_time {
+            float: none;
+        }
+    }
+    
+    @media screen and (max-width:982px) {
+        .Congratulations1 {
+            width: 100%;
+            padding-bottom: 65%;
+            background: url(../img/Congratulations1_mo.svg) top center/contain no-repeat;
+        }
+        .Congratulations1 span {
+            transform: scale(0.6) translate(-70%, -70%);
+            width: 100%;
+        }
+        .Congratulations2 {
+            width: 100%;
+            padding-bottom: 65%;
+            font-size: 55rem;
+            background: url(../img/Congratulations2_mo.svg) top center/contain no-repeat;
+        }
+        .Congratulations2 span {
+            left: 50%;
+        }
+        .Congratulations2 span b {
+            font-size: 80rem;
+        }
+        .foodWise2 {
+            margin-top: 0px;
+            position: relative;
+            top: 0px;
+            left: 290px;
+            height: fit-content;
+            width: 60%;
+            display: grid;
+            justify-content: space-between;
+            place-items: center;
+        }
+    }
+    
+    @media screen and (max-width:950px) {
+        .city {
+            display: block;
+        }
+        .inside_banner {
+            display: flex;
+            flex-direction: column-reverse;
+            position: relative;
+        }
+        main .width1500.Map_explore_page {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        .city_select {
+            display: block;
+            margin-bottom: 20px;
+        }
+        .btn-gradient {
+            display: none;
+        }
+        .btn-gradient.mobile {
+            display: block;
+        }
+        .city_select {
+            display: block;
+            margin-bottom: 20px;
+        }
+        main .width1500.Map_explore_page.Map_explore_page_activity {
+            /* grid-auto-flow: column; */
+            grid-template-columns: 1fr;
+        }
+        .map_Resultslist_con_activity {
+            min-height: 620px;
+        }
+        .city_content {
+            height: 500px;
+        }
+        .taiwan_map {
+            display: block;
+        }
+        .foodWise {
+            width: 100%;
+            background-color: #0aa07d;
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 60px;
+        }
+        .width1292.FoodWise {
+            width: 100%;
+        }
+        .Quick_menu {
+            width: 100%;
+            position: relative;
+            top: unset;
+        }
+        main .innerpage_Quick_menu .quickm_b {
+            display: block;
+        }
+        .foodWise ul {
+            width: 100%;
+            margin-top: -150px;
+            margin-top: unset;
+            padding: 0;
+            background-color: #fff;
+            border-radius: 20px;
+            color: #000;
+            padding: 10px;
+        }
+        .foodWise ul li a {
+            display: block;
+            color: #000;
+            font-size: 18rem;
+            padding: 5px 20px;
+        }
+        .foodWise ul li:after {
+            content: "";
+            width: 100%;
+        }
+        .foodWise ul li a:hover,
+        a:focus,
+        .foodWise ul li a.active {
+            background-color: rgb(214, 232, 190);
+            color: #000
+        }
+        .foodWise h2 {
+            width: 100%;
+            height: auto;
+            border-radius: unset;
+            background: unset;
+            border: unset;
+            padding: 0 20px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+    }
+    
+    @media screen and (max-width:787px) {
+        .inside_banner {
+            margin-top: 80px;
+        }
+        .containanimate {
+            flex-direction: column;
+        }
+        .left_animate,
+        .bubble {
+            width: 95%;
+            margin: auto;
+        }
+        .left_animate {
+            margin-top: 100px;
+        }
+        .nested_nav {
+            width: 100%;
+            border: none;
+        }
+        .nested_nav li a {
+            width: 100%;
+        }
+        .news h2 {
+            position: relative;
+            top: unset;
+        }
+        .tab>ul {
+            justify-content: center;
+        }
+        .foodWise2 {
+            margin-top: 0px;
+            position: relative;
+            top: 0px;
+            left: 290px;
+            height: fit-content;
+            width: 50%;
+            display: grid;
+            justify-content: space-between;
+            place-items: center;
+        }
+        #discoverpoint-banner span {
+            font-size: 22rem;
+            line-height: 26rem;
+        }
+        .discover_middle {
+            background: url(../img/discover_middle.svg) top center repeat-y;
+            width: 100%;
+            padding: 20px 0px;
+            display: grid;
+            gap: 0px;
+            position: relative;
+            z-index: 1;
+        }
+        .littlegametext i {
+            margin-right: 10rem;
+            font-size: 36rem;
+            color: #f9851c;
+        }
+        .textNB {
+            color: #f9851c;
+            font-size: 36rem;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        .textsmaill {
+            font-size: 18rem;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        .focus_banner img {
+            max-width: 95%;
+        }
+    }
+    
+    @media screen and (max-width:680px) {
+        .scool_b {
+            grid-template-columns: unset;
+        }
+        .heigh_scool {
+            grid-row: 1;
+        }
+        #mySwiper2 .swiper-slide.scene1 {
+            height: unset;
+        }
+        .blackboard.mobile {
+            display: block;
+        }
+        .blackboard.pc {
+            display: none;
+        }
+        .game_btn {
+            align-self: unset;
+        }
+        .game_btn img {
+            max-width: 100px;
+        }
+        .scene3_border {
+            margin-top: 20px;
+            gap: 0;
+        }
+        .Games_left_btn {
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .Situational_exploration_right_btn {
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #mySwiper2 .swiper-wrapper {
+            margin-bottom: 0;
+        }
+        .scene3_border {
+            padding-bottom: 30px;
+        }
+    }
+    
+    @media screen and (max-width:627px) {
+        .left_animate_banner {
+            width: 100%;
+            margin-bottom: -27px;
+        }
+        .EducationFacilities {
+            grid-template-columns: 1fr;
+        }
+    }
+    /*小遊戲*/
+    
+    @media screen and (max-width:600px) {
+        main .width1500 {
+            width: 100%;
+            grid-template-columns: unset;
+        }
+    }
+    
+    @media screen and (max-width:556px) {
+        .book_top,
+        .book_bottom {
+            display: none;
+        }
+        .book_middle {
+            background: none;
+        }
+        .book_middle {
+            padding: 5%;
+        }
+        .search_box .row {
+            flex-direction: column;
+            text-align: left;
+        }
+        .book_btn SVG {
+            width: calc(100% - 150px);
+            margin: auto;
+            max-height: 410px;
+            margin: -10% auto;
+        }
+        .book_btn {
+            margin-top: 0;
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        .bubble {
+            margin-top: -5%;
+        }
+    }
+    
+    @media screen and (max-width:469px) {
+        #mySwiper2 .swiper-slide.scene3 {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .game_btn {
+            position: relative;
+            right: unset;
+            top: unset
+        }
+    }
+    
+    * {
+        scroll-margin-top: 100px;
     }
-    .foodWise2 ul {
-        background-color: #a5eed5;
-        padding: 100px 10px 50px 10px;
-        border-radius: 2em 2em 2em 2em;
-        margin-top: -100px;
-        width: 100%;
-    }
-    .foodWise2 ul li {
-        border-bottom: #fff 0px solid;
-        list-style: none;
-        text-align: center;
-        display: inline-block;
-    }
-    .foodWise2 ul li:after {
-        content: "";
-        border-bottom: #076b54 0px solid;
-        display: block;
-        margin-top: 1px;
-        width: 100%;
-        height: 1px;
-    }
-    .foodWise2 ul li a {
-        display: block;
-        color: #225e92;
-        font-size: 18rem;
-        padding: 5px 8rem;
-    }
-    .foodWise2 ul li a:hover,
-    .foodWise2 ul li a:focus,
-    .foodWise2 ul li a.active {
-        color: #6d5a1b;
-    }
-}
-
-@media screen and (max-width: 1500px) {
-    .foodWise {
-        margin-left: 0;
-    }
-    .contain1000 {
-        max-width: 1300px;
-        width: calc(100% - 200px);
-    }
-    .container,
-    .width1500,
-    .scool_b {
-        width: 95% !important;
-    }
-    .globe {
-        z-index: unset;
-    }
-    .foodWise {
-        margin-top: -120px;
-    }
-    .foodWise2 {
-        margin-top: 0px;
-        position: relative;
-        top: 0px;
-        left: 290px;
-        height: fit-content;
-        width: 100%;
-        display: grid;
-        justify-content: space-between;
-        place-items: center;
-    }
-    .foodWise2 ul {
-        background-color: #a5eed5;
-        padding: 100px 10px 50px 10px;
-        border-radius: 2em 2em 2em 2em;
-        margin-top: -100px;
-        width: 100%;
-    }
-    .foodWise2 ul li {
-        border-bottom: #fff 0px solid;
-        list-style: none;
-        text-align: center;
-        display: inline-block;
-    }
-    .foodWise2 ul li:after {
-        content: "";
-        border-bottom: #076b54 0px solid;
-        display: block;
-        margin-top: 1px;
-        width: 100%;
-        height: 1px;
-    }
-    .foodWise2 ul li a {
-        display: block;
-        color: #225e92;
-        font-size: 18rem;
-        padding: 5px 2rem;
-    }
-    .foodWise2 ul li a:hover,
-    .foodWise2 ul li a:focus,
-    .foodWise2 ul li a.active {
-        color: #6d5a1b;
-    }
-    .nav_menu>li.search>.hasChild {
-        display: grid !important;
-        justify-content: center;
-    }
-    .hot_word {
-        width: 100%;
-    }
-    .contain1000 {
-        max-width: calc(1500px - 400px);
-        width: calc(100% - 400px);
-    }
-    .focuswrapper {
-        width: 95%;
-    }
-}
-
-@media screen and (max-width: 1453px) {
-    .left_animate {
-        width: 45%;
-    }
-    .bubble1,
-    .bubble_btn {
-        width: 100%;
-    }
-    main .width1500.innerpage {
-        grid-template-columns: unset
-    }
-    .foodWise h2 {
-        margin: auto;
-    }
-    .foodWise ul {
-        margin: auto;
-        margin-top: -100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .foodWise {
-        margin-top: -25px;
-    }
-    .foodWise ul li {
-        width: 90%;
-        margin: auto;
-    }
-    main .width1500 {
-        gap: 20px;
-    }
-    .width1292 {
-        padding: 20px;
-    }
-    .foodWise {
-        position: unset;
-    }
-    .discover {
-        position: fixed;
-        bottom: 10px;
-        right: 15px;
-        width: 115px;
-        height: 100px;
-        top: unset;
-    }
-}
-
-@media screen and (max-width:1183px) {
-    .inside_banner {
-        flex-direction: column-reverse;
-    }
-    h2.inside {
-        width: 100%;
-        margin-left: unset;
-        margin-bottom: -20px;
-    }
-    main .width1500.Map_explore_page {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media screen and (max-width:1500px) {
-    main .width1500.Topic_list {
-        grid-template-columns: 1fr;
-        padding-top: 10px;
-    }
-    .school_inside2 {
-        grid-template-columns: 1fr;
-        margin: 0;
-        padding: 30px 0;
-        border-bottom: #a77127 1px solid;
-    }
-    .school_inside_img {
-        grid-row: 1;
-        margin-top: 50px;
-    }
-    .school_inside2 a {
-        grid-template-columns: unset !important;
-    }
-    .school_inside2.b2,
-    .school_inside2.b3 {
-        grid-template-columns: 1fr !important;
-        margin-left: unset;
-        margin-top: unset;
-    }
-    #greybg.on {
-        display: block;
-    }
-    .environmental_book_img {
-        grid-row: 1;
-    }
-    header.eems {
-        width: 100%;
-        height: 63px;
-        position: fixed;
-        top: 0;
-        display: flex;
-        justify-content: space-between;
-        background-color: #009b9b;
-    }
-    .eems_color {
-        display: none;
-    }
-    .ac_breadcrumb {
-        padding-top: 60px;
-    }
-    .portfolio-filter {
-        display: flex;
-        flex-direction: column;
-        width: calc(100% - 80px);
-        height: 100%;
-        position: fixed;
-        left: calc(-100% + 80px);
-        top: 0;
-        z-index: 9999;
-        background: #2cbaba;
-        margin-bottom: 0;
-        margin-top: 0;
-        transition: 0.3s;
-    }
-    .portfolio-filter.on {
-        left: 0;
-        transition: 0.3s;
-        display: inline-flex;
-        align-items: center;
-        flex-direction: column;
-        height: 100vh;
-        overflow-y: auto;
-    }
-    /*mobile選單*/
-    #mobile_menu_labIcon {
-        display: block;
-        right: 2.5%;
-        top: 23px;
-        z-index: 1000;
-        position: absolute;
-    }
-    #menu_mobile {
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-        font-size: 1em;
-        position: relative;
-        display: block;
-    }
-    .search_border {
-        position: relative;
-        top: unset;
-        left: unset;
-        flex-wrap: wrap;
-    }
-    .hamburger {
-        cursor: pointer;
-        display: inline-block;
-    }
-    .hamburger2 {
-        cursor: pointer;
-        width: 30px;
-        height: 30px;
-        display: block;
-    }
-    .hamburger2 .line {
-        width: 30px;
-        height: 2px;
-        background-color: #d09623;
-        display: block;
-        margin: 4px auto;
-        -webkit-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        border-radius: 50px;
-    }
-    .hamburger2:hover {
-        cursor: pointer;
-    }
-    .hamburger .line {
-        width: 30px;
-        height: 2px;
-        background-color: #fff;
-        display: block;
-        margin: 4px auto;
-        -webkit-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        border-radius: 50px;
-    }
-    .hamburger:hover {
-        cursor: pointer;
-    }
-    #hamburger-1.is-active .line:nth-child(2) {
-        opacity: 0;
-    }
-    #hamburger-1.is-active .line:nth-child(1) {
-        transform: translateY(3px) rotate(45deg);
-    }
-    #hamburger-1.is-active .line:nth-child(3) {
-        transform: translateY(-10px) rotate(-45deg);
-    }
-    .portfolio-filter.isotope-filter.pull-center {
-        width: calc(100% - 80px);
-        height: 100%;
-        position: fixed;
-        left: calc(-100% + 80px);
-        top: 0;
-        z-index: 9999;
-        background: #fff;
-        margin-bottom: 0;
-        margin-top: 0;
-        transition: 0.3s;
-    }
-    header.eems .sitemap {
-        background-color: rgba(0, 0, 0, 0.3);
-        justify-content: center;
-        padding: 20px 0;
-    }
-    .nav_menu {
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-    }
-    .nav_menu li {
-        border-bottom: #fff 1px solid;
-        width: 100%;
-    }
-    .nav_menu li a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-        padding: 15px 0;
-    }
-    .nav_menu>li.nsdnmenu .hasChild li a {
-        width: 100%;
-        padding: 15px;
-        margin: 0;
-    }
-    header.eems h1 {
-        bottom: unset;
-        top: -20px;
-    }
-    header.eems h1 a {
-        height: 40px;
-    }
-    header.eems .sitemap ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 5px;
-        padding-left: 0;
-    }
-    .Topic_list_menu {
-        top: 70px;
-    }
-    .Topic_list_menu ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0 15px;
-        width: 100%;
-    }
-    .school_inside2.b1 {
-        margin-top: 0;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .socialAnchor1 {
-        margin-top: 0
-    }
-    .map_bg {
-        display: none;
-    }
-    .list_menu {
-        background: url(../img/list_menu.svg) 0 0/contain no-repeat;
-        width: 44px;
-        height: 22px;
-        display: inline-block;
-    }
-    .Topic_list_menu h2 {
-        display: flex;
-        justify-content: space-between;
-        font-size: 24rem;
-        margin: 5px;
-        align-items: center
-    }
-    .Topic_list_menu div {
-        display: none;
-    }
-    .nav_menu>li>.hasChild {
-        position: relative;
-        left: unset;
-        top: unset;
-        width: 100%;
-        opacity: 1;
-        display: none;
-        background-color: #009b9b;
-        margin: 0;
-        padding: 0;
-    }
-    .nav_menu>li.nsdnmenu:hover>.hasChild {
-        padding: 0;
-    }
-    .hasChild ul {
-        max-width: 100%;
-    }
-    .nav_menu>li.nsdnmenu>.hasChild ul li {
-        flex-direction: column;
-    }
-    .nav_menu>li.nsdnmenu .hasChild2 {
-        position: relative;
-        left: unset;
-        top: unset;
-        width: 100%;
-        opacity: 1;
-        display: none;
-        background-color: #007a7a;
-        margin: 0;
-        padding: 0;
-    }
-    .nav_menu>li.nsdnmenu:hover li:checked>.hasChild2,
-    .nav_menu>li.nsdnmenu:focus-within li:focus-within>.hasChild2 {
-        width: 100%;
-        position: relative;
-        left: unset;
-        top: unset;
-        display: block;
-        background-color: #008383;
-    }
-    .nav_menu li.search a span {
-        display: none;
-    }
-    .note_description {
-        font-size: 20rem;
-        line-height: 30px;
-        padding-left: 39px;
-        text-align: justify;
-        margin-bottom: 8px;
-        width: 95%;
-    }
-}
-
-@media screen and (max-width: 1140px) {
-    .bubble {
-        display: flex;
-        flex-wrap: wrap;
-        height: auto;
-        justify-content: center;
-    }
-    .global_action {
-        margin-top: unset;
-    }
-}
-
-@media screen and (max-width:1137px) {
-    .NEWS li {
-        display: grid;
-    }
-    .NEWS li a:nth-child(1) {
-        width: 100%;
-    }
-    footer .width1500 {
-        padding-top: 80px;
-    }
-    main .width1500.search_criteria {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    .search_list::after {
-        display: none;
-    }
-}
-
-@media screen and (max-width:992px) {
-    .search_box div {
-        text-align: left !important;
-    }
-    .search_box #range,
-    .search_box #one_date,
-    .search_box #_time {
-        float: none;
-    }
-}
-
-@media screen and (max-width:982px) {
-    .Congratulations1 {
-        width: 100%;
-        padding-bottom: 65%;
-        background: url(../img/Congratulations1_mo.svg) top center/contain no-repeat;
-    }
-    .Congratulations1 span {
-        transform: scale(0.6) translate(-70%, -70%);
-        width: 100%;
-    }
-    .Congratulations2 {
-        width: 100%;
-        padding-bottom: 65%;
-        font-size: 55rem;
-        background: url(../img/Congratulations2_mo.svg) top center/contain no-repeat;
-    }
-    .Congratulations2 span {
-        left: 50%;
-    }
-    .Congratulations2 span b {
-        font-size: 80rem;
-    }
-    .foodWise2 {
-        margin-top: 0px;
-        position: relative;
-        top: 0px;
-        left: 290px;
-        height: fit-content;
-        width: 60%;
-        display: grid;
-        justify-content: space-between;
-        place-items: center;
-    }
-}
-
-@media screen and (max-width:950px) {
-    .city {
-        display: block;
-    }
-    .inside_banner {
-        display: flex;
-        flex-direction: column-reverse;
-        position: relative;
-    }
-    main .width1500.Map_explore_page {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-    .city_select {
-        display: block;
-        margin-bottom: 20px;
-    }
-    .btn-gradient {
-        display: none;
-    }
-    .btn-gradient.mobile {
-        display: block;
-    }
-    .city_select {
-        display: block;
-        margin-bottom: 20px;
-    }
-    main .width1500.Map_explore_page.Map_explore_page_activity {
-        /* grid-auto-flow: column; */
-        grid-template-columns: 1fr;
-    }
-    .map_Resultslist_con_activity {
-        min-height: 620px;
-    }
-    .city_content {
-        height: 500px;
-    }
-    .taiwan_map {
-        display: block;
-    }
-    .foodWise {
-        width: 100%;
-        background-color: #0aa07d;
-        padding: 30px;
-        border-radius: 20px;
-        margin-top: 60px;
-    }
-    .width1292.FoodWise {
-        width: 100%;
-    }
-    .Quick_menu {
-        width: 100%;
-        position: relative;
-        top: unset;
-    }
-    main .innerpage_Quick_menu .quickm_b {
-        display: block;
-    }
-    .foodWise ul {
-        width: 100%;
-        margin-top: -150px;
-        margin-top: unset;
-        padding: 0;
-        background-color: #fff;
-        border-radius: 20px;
-        color: #000;
-        padding: 10px;
-    }
-    .foodWise ul li a {
-        display: block;
-        color: #000;
-        font-size: 18rem;
-        padding: 5px 20px;
-    }
-    .foodWise ul li:after {
-        content: "";
-        width: 100%;
-    }
-    .foodWise ul li a:hover,
-    a:focus,
-    .foodWise ul li a.active {
-        background-color: rgb(214, 232, 190);
-        color: #000
-    }
-    .foodWise h2 {
-        width: 100%;
-        height: auto;
-        border-radius: unset;
-        background: unset;
-        border: unset;
-        padding: 0 20px;
-        overflow: hidden;
-        margin-bottom: 10px;
-    }
-}
-
-@media screen and (max-width:787px) {
-    .inside_banner {
-        margin-top: 80px;
-    }
-    .containanimate {
-        flex-direction: column;
-    }
-    .left_animate,
-    .bubble {
-        width: 95%;
-        margin: auto;
-    }
-    .left_animate {
-        margin-top: 100px;
-    }
-    .nested_nav {
-        width: 100%;
-        border: none;
-    }
-    .nested_nav li a {
-        width: 100%;
-    }
-    .news h2 {
-        position: relative;
-        top: unset;
-    }
-    .tab>ul {
-        justify-content: center;
-    }
-    .foodWise2 {
-        margin-top: 0px;
-        position: relative;
-        top: 0px;
-        left: 290px;
-        height: fit-content;
-        width: 50%;
-        display: grid;
-        justify-content: space-between;
-        place-items: center;
-    }
-    #discoverpoint-banner span {
-        font-size: 22rem;
-        line-height: 26rem;
-    }
-    .discover_middle {
-        background: url(../img/discover_middle.svg) top center repeat-y;
-        width: 100%;
-        padding: 20px 0px;
-        display: grid;
-        gap: 0px;
-        position: relative;
-        z-index: 1;
-    }
-    .littlegametext i {
-        margin-right: 10rem;
-        font-size: 36rem;
-        color: #f9851c;
-    }
-    .textNB {
-        color: #f9851c;
-        font-size: 36rem;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-    }
-    .textsmaill {
-        font-size: 18rem;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-    }
-    .focus_banner img {
-        max-width: 95%;
-    }
-}
-
-@media screen and (max-width:680px) {
-    .scool_b {
-        grid-template-columns: unset;
-    }
-    .heigh_scool {
-        grid-row: 1;
-    }
-}
-
-@media screen and (max-width:627px) {
-    .left_animate_banner {
-        width: 100%;
-        margin-bottom: -27px;
-    }
-    .EducationFacilities {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-/*小遊戲*/
-
-@media screen and (max-width:600px) {
-    main .width1500 {
-        width: 100%;
-        grid-template-columns: unset;
-    }
-}
-
-@media screen and (max-width:506px) {
-    .book_top,
-    .book_bottom {
-        display: none;
-    }
-    .book_middle {
-        background: none;
-    }
-    .book_middle {
-        padding: 5%;
-    }
-    .search_box .row {
-        flex-direction: column;
-        text-align: left;
-    }
-}
-
-@media screen and (max-width:480px) {
-    .bubble {
-        margin-top: -5%;
-    }
-}
-
-* {
-    scroll-margin-top: 100px;
-}

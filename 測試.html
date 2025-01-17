@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0075)https://eeis.epa.gov.tw/front/EEAction/_show/Detail.aspx?pid=296466&type=12 -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-hant">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        環境探索館
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="環境探索館">
+    <meta name="keywords" content="環境探索館,EEIS">
+    <link rel="stylesheet" href="css-/animate.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/swiper-bundle.min.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <style>
+        .map_btn img {
+            width: 550px;
+        }
+        
+        .Topic_exploration_right_btn {
+            width: 152px;
+            height: 200px;
+            background: url(img/Topic_exploration_right_btn.svg) 0 0/contain no-repeat;
+        }
+        
+        .Topic_exploration_left_btn {
+            width: 152px;
+            height: 186px;
+            background: url(img/Topic_exploration_left_btn.svg) 0 0/contain no-repeat;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+    <section class="banner_scroll">
+
+
+        <div class="banner_bg">
+            <div class="banner_img_btn width1009 ">
+                <div class="swiper-container" id="mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide scene1">
+                            <div class="book_btn" style=" margin-bottom: 30px; margin-top: 10px;">
+
+                            </div>
+                            <div class="Topic_exploration_right_btn swiper-button-next "></div>
+                            <div class=" Games_left_btn swiper-button-prev "></div>
+                        </div>
+
+                        <div class="swiper-slide scene2">
+
+
+                            <div class="Games_right_btn swiper-button-next "></div>
+                            <div class="Situational_exploration_left_btn swiper-button-prev "></div>
+                        </div>
+                        <div class="swiper-slide scene3">
+                            <div class="scene3_border">
+                                <a class="map_btn" href><img src="img/map_btn.svg" alt="綠點是甚麼"></a>
+
+                            </div>
+                            <div class=" Situational_exploration_right_btn swiper-button-next "></div>
+                            <div class=" Topic_exploration_left_btn swiper-button-prev  "></div>
+                        </div>
+
+                    </div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--footer-->
+
+
+    <script type="text/javascript " src="js/jquery.min.js "></script>
+    <script type="text/javascript " src="js/bootstrap.min.js "></script>
+
+    <script type="text/javascript " src="js/swiper-bundle.min.js "></script>
+    <script type="text/javascript " src="js/myJs.js ">
+    </script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            var swiper2 = new Swiper("#mySwiper", {
+
+                slidesPerView: 1,
+                spaceBetween: 1,
+                navigation: {
+                    nextEl: "#mySwiper .swiper-button-next",
+                    prevEl: "#mySwiper .swiper-button-prev",
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 5,
+                    },
+                    1111: {
+                        slidesPerView: 2,
+                        spaceBetween: 5,
+                    },
+                    1250: {
+                        slidesPerView: 4,
+                        spaceBetween: 5,
+                    },
+                    1300: {
+                        slidesPerView: 5,
+                        spaceBetween: 5,
+                    },
+                },
+            });
+
+
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var swiper = new Swiper('#mySwiper2', {
+                loop: true,
+                initialSlide: 0, // 預設從第0個場景開始 (場景1)
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                // 如果不需要3D效果，可以移除effect参数
+                effect: 'cube',
+                cubeEffect: {
+                    shadow: false,
+                    shadowOffset: 20,
+                    shadowScale: 0.94,
+                },
+            });
+
+            // 监听窗口大小变化，立即更新Swiper高度
+            window.addEventListener('resize', function() {
+                swiper.updateAutoHeight();
+            });
+
+
+            // **事件监听器**
+
+            // 1. `.Topic_exploration_right_btn` 点击后跳转到 scene2
+            document.querySelector('.Topic_exploration_right_btn').addEventListener('click', function(e) {
+                e.preventDefault();
+                swiper.slideToLoop(getSlideIndexByClass('scene2'));
+            });
+
+            // 2. `.Games_left_btn` 点击后跳转到 scene3
+            document.querySelector('.Games_left_btn').addEventListener('click', function(e) {
+                e.preventDefault();
+                swiper.slideToLoop(getSlideIndexByClass('scene3'));
+            });
+
+            // 3. `.Games_right_btn` 点击后跳转到 scene3
+            document.querySelector('.Games_right_btn').addEventListener('click', function(e) {
+                e.preventDefault();
+                swiper.slideToLoop(getSlideIndexByClass('scene3'));
+            });
+
+            // 4. `.Situational_exploration_left_btn` 点击后跳转到 scene1
+            document.querySelector('.Situational_exploration_left_btn').addEventListener('click', function(e) {
+                e.preventDefault();
+                swiper.slideToLoop(getSlideIndexByClass('scene1'));
+            });
+
+            // 5. `.Situational_exploration_right_btn` 点击后跳转到 scene1
+            document.querySelector('.Situational_exploration_right_btn').addEventListener('click', function(e) {
+                e.preventDefault();
+                swiper.slideToLoop(getSlideIndexByClass('scene1'));
+            });
+
+            // 6. `.Topic_exploration_left_btn` 点击后跳转到 scene2
+            document.querySelector('.Topic_exploration_left_btn').addEventListener('click', function(e) {
+                e.preventDefault();
+                swiper.slideToLoop(getSlideIndexByClass('scene2'));
+            });
+        });
+    </script>
+
+</body>
+
+</html>

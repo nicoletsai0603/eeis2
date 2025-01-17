@@ -38,7 +38,17 @@
         <div class="small_bg"></div>
         <div class="container">
             <h1><a href="" title="環境教育探索館">環境教育探索館</a></h1>
+           
+          
             <div class="portfolio-filter">
+                <form id="form_search" method="post" action="https://eeis.epa.gov.tw/Eng/Search.aspx">
+                    <div class="search_border">
+                        <input type="text" id="txt_seach" accesskey="S" class="text KeyWord" placeholder="請輸入關鍵字" title="請輸入關鍵字">
+                        <input type="button" name="SearchBtn" value="search" id="SearchBtn" class="btn SearchBtn" title="search">
+                    </div>
+                    <input id="txt_searchword" name="txt_searchword" value="" type="hidden">
+                    <input name="ctl00$ContentPlaceHolder1$searchtoken" type="hidden" id="ContentPlaceHolder1_searchtoken" value="50156">
+                </form>
                 <div class="sitemap">
                     <ul>
                         <li>
@@ -46,14 +56,7 @@
                         </li>
                         <li class="site_links"> <a href="">網站導覽</a>|<a href="">登入</a></li>
                         <li>
-                            <div class="search_border">
-                                <input type="text" id="txt_seach" accesskey="S" class="text KeyWord" placeholder="請輸入關鍵字" title="請輸入關鍵字">
-                                <input type="button" name="SearchBtn" value="search" id="SearchBtn" class="btn SearchBtn" title="search">
-                            </div>
-                            <form id="form_search" method="post" action="https://eeis.epa.gov.tw/Eng/Search.aspx">
-                                <input id="txt_searchword" name="txt_searchword" value="" type="hidden">
-                                <input name="ctl00$ContentPlaceHolder1$searchtoken" type="hidden" id="ContentPlaceHolder1_searchtoken" value="50156">
-                            </form>
+                          
                         </li>
                         <li class="hot_keywords">熱門關鍵字: <a href="">教案</a>、<a href="">行動方案</a></li>
                         <li>
@@ -70,7 +73,27 @@
                         <div class="hasChild">
                             <ul class="Click_menu">
                                 <li>
-                                    <a class="navmenu3" href="javascript:void(0);" title="活動資訊">活動資訊1</a>
+                                    <a class="navmenu3" href="javascript:void(0);" title="活動資訊">1</a>
+                                    <!-- 展開的次選單 -->
+                                    <div class="hasChild hasChild2">
+                                        <ul class="Click_menu">
+                                            <li>
+                                                <a href="javascript:void(0);" title="活動資訊">1</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" title="活動資訊2">2</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" title="活動資訊3">3</a>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                    <!-- 展開的次選單 -->
+                                </li>
+                                <li>
+                                    <a class="navmenu3" href="javascript:void(0);" title="活動資訊2">2</a>
                                     <!-- 展開的次選單 -->
                                     <div class="hasChild hasChild2">
                                         <ul class="Click_menu">
@@ -90,32 +113,12 @@
                                     <!-- 展開的次選單 -->
                                 </li>
                                 <li>
-                                    <a class="navmenu3" href="javascript:void(0);" title="活動資訊2">活動資訊2</a>
-                                    <!-- 展開的次選單 -->
-                                    <div class="hasChild hasChild2">
-                                        <ul class="Click_menu">
-                                            <li>
-                                                <a href="javascript:void(0);" title="活動資訊">活動資訊1</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" title="活動資訊2">活動資訊2</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" title="活動資訊3">活動資訊3活動資訊3</a>
-                                            </li>
-
-                                        </ul>
-
-                                    </div>
-                                    <!-- 展開的次選單 -->
-                                </li>
-                                <li>
-                                    <a class="navmenu3" href="javascript:void(0);" title="活動資訊3">活動資訊3活動資訊3活動資訊3活動資訊3活動資訊3活動資訊3活動資訊3活動資訊3</a>
+                                    <a class="navmenu3" href="javascript:void(0);" title="活動資訊3">3</a>
                                     <!-- 展開的次選單 -->
                                     <div class="hasChild  hasChild2">
                                         <ul class="Click_menu">
                                             <li>
-                                                <a href="javascript:void(0);" title="活動資訊">活動資訊1</a>
+                                                <a href="javascript:void(0);" title="活動資訊">活動資訊1活動資訊1</a>
                                             </li>
                                             <li>
                                                 <a href="javascript:void(0);" title="活動資訊2">活動資訊2</a>
@@ -199,7 +202,6 @@
             </div>
         </div>
     </header>
-
 
     <div class="ac_breadcrumb">
 

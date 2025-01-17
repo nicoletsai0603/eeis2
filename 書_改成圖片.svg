@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_點陣圖化" data-name="點陣圖化" xmlns="http://www.w3.org/2000/svg" width="438.97" height="389.83"
+    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 438.97 389.83">
+    <image width="916" height="671" transform="translate(-.41 59.82) scale(.48)" xlink:href="img/書_改成圖片-1.png" />
+    <image width="480" height="376" transform="translate(102.79 168.78) scale(.48)" xlink:href="img/書_改成圖片-2.png" />
+    <a href="#">
+        <image class="book_btn_a" id="_戶外學習" data-name="戶外學習" width="187" height="196"
+            transform="translate(56.23 55.98) scale(.48)" xlink:href="img/戶外學習.png" />
+        <image class="book_btn_hover" id="_戶外學習_x5F_hover" data-name="戶外學習_x5F_hover" width="187" height="196"
+            transform="translate(56.23 55.98) scale(.48)" xlink:href="img/戶外學習_hover.png" />
+    </a>
+    <a href="#">
+        <image class="book_btn_a" id="_增能培訓" data-name="增能培訓" width="186" height="194"
+            transform="translate(173.35 -.18) scale(.48)" xlink:href="img/增能培訓.png" />
+        <image class="book_btn_hover" id="_增能培訓_x5F_hover" data-name="增能培訓_x5F_hover" width="186" height="194"
+            transform="translate(173.35 -.18) scale(.48)" xlink:href="img/增能培訓_hover.png" />
+    </a>
+    <a href="#">
+        <image class="book_btn_a" id="_在地行動" data-name="在地行動" width="187" height="196"
+            transform="translate(294.31 295.98) scale(.48)" xlink:href="img/在地行動.png" />
+        <image class="book_btn_hover" id="_在地行動_x5F_hover" data-name="在地行動_x5F_hover" width="187" height="196"
+            transform="translate(294.31 295.98) scale(.48)" xlink:href="img/在地行動_hover.png" />
+    </a>
+    <a href="#">
+        <image class="book_btn_a" id="_國際合作" data-name="國際合作" width="187" height="191"
+            transform="translate(343.27 168.3) scale(.48)" xlink:href="img/國際合作.png" />
+        <image class="book_btn_hover" id="_國際合作_x5F_hover" data-name="國際合作_x5F_hover" width="187" height="191"
+            transform="translate(343.27 168.3) scale(.48)" xlink:href="img/國際合作_hover.png" />
+    </a>
+    <a href="#">
+        <image class="book_btn_a" id="_學習資源" data-name="學習資源" width="187" height="198"
+            transform="translate(306.31 55.02) scale(.48)" xlink:href="img/學習資源.png" />
+        <image class="book_btn_hover" id="_學習資源_x5F_hover" data-name="學習資源_x5F_hover" width="187" height="198"
+            transform="translate(306.31 55.02) scale(.48)" xlink:href="img/學習資源_hover.png" />
+    </a>
+    <a href="#">
+        <image class="book_btn_a" id="_競賽表揚" data-name="競賽表揚" width="186" height="193"
+            transform="translate(5.35 168.3) scale(.48)" xlink:href="img/競賽表揚.png" />
+        <image class="book_btn_hover" id="_競賽表揚_x5F_hover" data-name="競賽表揚_x5F_hover" width="186" height="193"
+            transform="translate(5.35 168.3) scale(.48)" xlink:href="img/競賽表揚_hover.png" />
+    </a>
+    <a href="#">
+        <image class="book_btn_a" id="_推廣活動" data-name="推廣活動" width="186" height="194"
+            transform="translate(66.31 295.98) scale(.48)" xlink:href="img/推廣活動.png" />
+        <image class="book_btn_hover" id="_推廣活動_x5F_hover" data-name="推廣活動_x5F_hover" width="186" height="194"
+            transform="translate(66.31 295.98) scale(.48)" xlink:href="img/推廣活動_hover.png" />
+    </a>
+</svg>

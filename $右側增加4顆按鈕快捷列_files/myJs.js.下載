@@ -1,0 +1,173 @@
+﻿/*功能列手風琴效果*/
+function accordion(v) {
+    var item = $('#' + v);
+    var icon = $('#icon_' + v);
+
+    if (item.attr('class') == "_hide") {
+        item.removeClass("_hide");
+        item.addClass("_show");
+        icon.removeClass("icon_up");
+        icon.addClass("icon_down");
+    }
+    else {
+        item.removeClass("_show");
+        item.addClass("_hide");
+        icon.removeClass("icon_down");
+        icon.addClass("icon_up");
+    }
+}
+
+
+$(function () {
+    //自動輪播
+    self.setInterval("ChangeSlideShow();", 1000000);
+})
+
+function ChangeSlideShow() {
+    var next;
+    var count = 0;;
+    $(".carousel-indicators li").each(function () {
+        if ($(this).attr("class").indexOf("active") >= 0) {
+            next = parseInt($(this).attr("data-slide-to")) + 2;
+        }
+        count++;
+    });
+    next = next > count ? 1 : next;
+    $(".carousel-" + next).click();
+}
+function TabSlideShow(e, id, next, total) {
+    if (e.keyCode == 9) {
+        if (next + 1 <= total) {
+            $(".carousel-" + (next + 1)).click();
+        }
+    }
+    if (e.keyCode == 13) {
+        if (id > 0) {
+            location.href = "information/Detail.aspx?id=" + id;
+        }
+    }
+}
+
+/*alert*/
+function MyAlert(v) {
+    bootbox.alert({
+        message: v,
+        closeButton: false,
+        buttons: {
+            ok: {
+                label: '確認',
+                className: "btn_submit"
+            }
+        }
+    });
+}
+
+/*confirm*/
+function MyConfirm(sender, msg) {
+    if ($(sender).attr("confirmed") == "true") { return true; }
+
+    swal({
+        type: 'warning',
+        title: msg,
+        html: true,
+        confirmButtonColor: "#4e73df",
+        confirmButtonText: '是',
+        showCancelButton: true,
+        cancelButtonText: "否",
+        allowOutsideClick: false
+    }, function (isConfirm) {
+        if (isConfirm) {
+            $(sender).attr("confirmed", true).trigger("click");
+        } else {
+            return false;
+        }
+    })
+    return false;
+}
+
+/*彈跳視窗自適應*/
+function DialogResponse(v) {
+    var item = v;
+    var _width = parseInt($(window).width() - 50);
+    var _maxWidth = parseInt(item.dialog("option", "maxWidth"));
+    var tWidth = _width > _maxWidth ? _maxWidth : _width;
+    item.css("width", tWidth);
+    item.parent().css("width", tWidth);
+    item.parent().css("left", ($(window).width() - tWidth) / 2);
+}
+
+/*欄位必填提示*/
+function EmptyCheck() {
+    var is_valid = true;
+    $(".prompt").remove();
+    $(".empty_prompt").each(function () {
+        $(this).css("border", "");
+        if ($(this).val().trim() == "") {
+            $(this).css("border", "1.5px solid red");
+            $(this).after("<span class=\"prompt\">" + stripHTML($(this).attr("prompt")) + "<span>")
+            is_valid = false;
+        }
+    })
+    return is_valid;
+}
+
+/*過濾特殊字元*/
+function stripHTML(input) {
+    var s = '';
+    if (typeof (input) == 'string') {
+        var s = input.replace(/(<([^>]+)>)/ig, "");
+    }
+    var pattern = new RegExp("[`~!@#$^&*()=|{}':;',\\[\\].<>/?~！@#￥……&*（）&;|{}【】‘；：”“'。，、？]")
+    var rs = "";
+    for (var i = 0; i < s.length; i++) {
+        rs = rs + s.substr(i, 1).replace(pattern, '');
+    }
+    return rs;
+}
+
+//自訂義alert，來源sweetalert
+function CustAlert(IsOK, title, html, url) {
+    swal({
+        type: IsOK.toString().toUpperCase() == 'TRUE' ? 'success' : 'error',
+        title: title,
+        html: true,
+        text: html,
+        confirmButtonColor: "#4e73df",
+        confirmButtonText: '確定',
+        allowOutsideClick: false
+    }, function (isConfirm) {
+        if (isConfirm) {
+            if (url) {
+                location.href = url.replace('&amp;', '&');
+            }
+        }
+    })
+}
+
+$(function ()
+{
+    //無障礙標章屬性
+    $(".ckeditBody iframe").attr("title", "影片");
+    $(".ckeditBody tr:first-child td").attr("scope", "row");
+    $(".ckeditBody tr:first-child th").attr("scope", "row");
+    $(".ckeditBody img").attr("alt", "圖片");
+})
+
+//根據內容重新調整Iframe高度
+window.addEventListener('resize', resizeCkeditBodyForm);
+function resizeCkeditBodyForm() {
+    var iframe = document.querySelector('.width1292 iframe');
+    if (iframe) {
+
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 100 + 'px';
+    }
+}
+
+//blockUI
+function blockUI() {
+    $.blockUI({ message: "<div class=\"spinner-border text-white\" role=\"status\"><span class=\"sr-only\">Loading...</span></div><span class=\"msg pl-1 text-white\">Loading...</span>", css: { top: ($(window).height() - 35) / 2 + 'px', left: ($(window).width() - 35) / 2 + 'px', width: '100px' }, baseZ: 2000 });
+}
+//unblockUI
+function unblockUI() {
+    $.unblockUI();
+}

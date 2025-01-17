@@ -1,0 +1,1 @@
+/*False*/$(function (){$('#WebCounterToday').html(5);$('#WebCounterTotal').html(1920017);$('#WebCounterOnLine').html(2);});

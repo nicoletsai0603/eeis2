@@ -1,0 +1,17 @@
+﻿
+@charset "UTF-8";
+
+@font-face {
+    font-family: "wp08";
+    src: url("/x/rwd/fonts/wp010-08.ttf") format("truetype");
+}
+
+/*@media all and (-ms-high-contrast:none) {
+    body * {
+        font-family: "王漢宗中楷體注音";
+    }
+}
+
+.child {
+    font-family: wp08 !important;
+}*/
